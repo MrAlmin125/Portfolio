@@ -1,0 +1,15 @@
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1626"/>
+      <stop offset="100%" stop-color="#2d2140"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c5cff"/>
+      <stop offset="100%" stop-color="#ff7a59"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <circle cx="300" cy="300" r="270" fill="none" stroke="url(#ring)" stroke-width="3" stroke-opacity="0.5"/>
+  <text x="300" y="335" font-family="Space Grotesk, Arial, sans-serif" font-size="180" font-weight="700" fill="#f2f1ec" text-anchor="middle">MA</text>
+</svg>

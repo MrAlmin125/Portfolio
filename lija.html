@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>ভালোবাসার অ্যাপ</title>
+    <link rel="icon" href="assets/images/Amin___Black.png">
+     <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/love.css?v=6" />       
+</head>
+<body>
+
+    <!-- ===== SPLASH SCREEN ===== -->
+    <div class="splash-screen" id="splashScreen">
+        
+        <!-- Flying Images -->
+        <div class="flying-images" id="flyingImages"></div>
+        
+        <!-- Splash Bubbles -->
+        <div class="splash-bubbles" id="splashBubbles"></div>
+        
+        <!-- Splash Floating Hearts & Flowers -->
+        <div class="splash-floating" id="splashFloating"></div>
+        
+        <!-- Splash Flowers -->
+        <div class="splash-flowers" id="splashFlowers"></div>
+
+        <div class="splash-text">
+            <div class="splash-hello">প্রিয়তমা</div>
+            <div class="splash-name" id="splashName"> লিজা মনি </div>
+            <div class="splash-heart">❤️</div>
+        </div>
+        <div class="splash-loading">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- ===== MAIN APP ===== -->
+    <div class="app-card" id="appCard">
+
+        <!-- Bubble Container -->
+        <div class="bubble-container" id="bubbleContainer"></div>
+        
+        <!-- Floating Elements -->
+        <div class="floating-elements" id="floatingElements"></div>
+        
+        <!-- Heart Rain -->
+        <div class="heart-rain" id="heartRain"></div>
+        
+        <!-- Sparkle -->
+        <div class="sparkle-container" id="sparkleContainer"></div>
+        
+        <!-- Petal Overlay -->
+        <div class="petal-overlay" id="petalOverlay"></div>
+
+        <!-- Music Toggle -->
+        <div class="music-toggle" id="musicToggle" title="মিউজিক টগল">🎵</div>
+
+        <div class="content">
+
+            <div class="section-congrats">
+                <span class="congrats-line">🌸 অভিনন্দন 🌸</span>
+                <span class="congrats-names-line" id="namesDisplay">
+                    <span id="name1Display">মিঃ আমিন</span> <span class="heart-icon">❤️</span> <span id="name2Display"> লিজা মনি </span>
+                </span>
+            </div>
+
+            <div class="section-name-image">
+                <div class="profile-section">
+                    <div class="profile-item">
+                        <div class="ring">
+                            <div class="ring-inner">
+                                <img src="assets/images/lover-1.jpg" alt="Partner 1" id="profileImg1" />
+                            </div>
+                        </div>
+                        <div class="flower-deco flower-deco-left">🌸</div>
+                        <span class="profile-name" id="profileName1">মিঃ আমিন</span>
+                    </div>
+
+                    <div class="handshake-wrapper">
+                        <div class="handshake-icon">🤝</div>
+                    </div>
+
+                    <div class="profile-item">
+                        <div class="ring">
+                            <div class="ring-inner">
+                                <img src="assets/images/lija.jpg" alt="Partner 2" id="profileImg2" />
+                            </div>
+                        </div>
+                        <div class="flower-deco">🌷</div>
+                        <span class="profile-name" id="profileName2"> লিজা মনি </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-love">
+                <div class="love-title" id="loveTitle">
+                    <span class="typewriter-text" id="typewriterText"></span>
+                    <span class="lover-name-typewriter" id="loverNameTypewriter"></span>
+                    <span class="heart-emoji-last" id="heartEmojiLast">❤️</span>
+                    <span class="cursor-blink" id="cursorBlink"></span>
+                </div>
+            </div>
+
+            <!-- 3 DIVS WITH 3 SPANS -->
+            <div class="section-quotes" id="quotesContainer">
+                <div class="quote-div" id="quoteDiv1">
+                    <span class="q-emoji" id="qEmoji1">✨</span>
+                    <span class="q-text" id="qText1"></span>
+                    <span class="q-cursor" id="qCursor1"></span>
+                </div>
+                <div class="quote-div" id="quoteDiv2">
+                    <span class="q-emoji" id="qEmoji2">🌹</span>
+                    <span class="q-text" id="qText2"></span>
+                    <span class="q-cursor" id="qCursor2"></span>
+                </div>
+                <div class="quote-div" id="quoteDiv3">
+                    <span class="q-emoji" id="qEmoji3">💖</span>
+                    <span class="q-text" id="qText3"></span>
+                    <span class="q-cursor" id="qCursor3"></span>
+                </div>
+            </div>
+
+            <div class="dedication-section">
+                <div class="dedication-title">💝 আমার উৎসর্গ 💝</div>
+                <div class="dedication-text" id="dedicationText">
+                    <span class="highlight-name" id="dedicationName">লিজা মনি</span> -<br>
+                    তুমি আমার জীবনের সবচেয়ে সুন্দর অনুভূতি
+                </div>
+            </div>
+
+            <div class="love-counter-section">
+                <div class="love-counter-label">💕 আমি তোমাকে কতদিন ভালোবাসি</div>
+                <span class="love-counter-number" id="loveCounterDays">০</span>
+                <div class="love-counter-label-small">দিন</div>
+            </div>
+
+            <div class="love-meter-section">
+                <div class="love-meter-label">💕 আমার ভালোবাসার মাপকাঠি</div>
+                <div class="love-meter-bar">
+                    <div class="love-meter-fill" id="loveMeterFill" style="width: 0%;"></div>
+                </div>
+                <div class="love-meter-percent" id="loveMeterPercent">০%</div>
+            </div>
+
+            <div class="interactive-heart">
+                <button class="heart-btn" id="heartBtn">
+                    <span class="heart-emoji-big">❤️</span>
+                    <span class="heart-count" id="heartCount">০</span>
+                </button>
+                <span class="love-label">❤️ তোমাকে ভালোবাসি</span>
+            </div>
+
+            <button class="love-letter-btn" id="loveLetterBtn">
+                💌 ভালোবাসার চিঠি পড়ুন
+            </button>
+
+            <div class="countdown-section">
+                <div class="countdown-label">⏳ আমাদের বিশেষ দিন পর্যন্ত বাকি</div>
+                <div class="countdown-timer" id="countdownTimer">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="countdownDays">০০</span>
+                        <span class="countdown-label-small">দিন</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="countdownHours">০০</span>
+                        <span class="countdown-label-small">ঘন্টা</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="countdownMinutes">০০</span>
+                        <span class="countdown-label-small">মিনিট</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="countdownSeconds">০০</span>
+                        <span class="countdown-label-small">সেকেন্ড</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <div class="footer">
+                <p>Developed By <span class="heart-ft">❤️</span><a href="https://amin.free.nf" target="_blank" rel="noopener noreferrer" 
+           style="color: #b34a5e; text-decoration: none; font-weight: 600; transition: color 0.3s ease;">
+            Amin
+        </a> | 2026</p>
+            </div>
+
+        </div>
+
+        <!-- ===== LOVE LETTER MODAL ===== -->
+        <div class="modal-overlay" id="loveLetterModal">
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose">✕</button>
+                <div class="modal-title">💌 ভালোবাসার চিঠি</div>
+                <div class="modal-heart-decoration">💕💗💖</div>
+                <div class="modal-letter" id="modalLetter">
+                    <p>প্রিয় <strong id="modalName"> লিজা মনি  </strong>,</p>
+                    <p>তোমার সাথে প্রতিটি দিন আমার জীবনের সবচেয়ে সুন্দর অধ্যায়। তোমার হাসি আমার দিনকে আলোকিত করে, তোমার কথা আমার মনকে শান্তি দেয়।</p>
+                    <p>আমি জানি না, কীভাবে তোমাকে বলবো যে তুমি আমার কাছে কতটা মূল্যবান। তুমি শুধু আমার প্রেমিকা নও, তুমি আমার বন্ধু, আমার সঙ্গী, আমার অনুপ্রেরণা।</p>
+                    <p>আমি তোমাকে আমার জীবনের প্রতিটি মুহূর্তে চাই। তোমার সাথে হাঁটতে চাই, তোমার সাথে স্বপ্ন দেখতে চাই, তোমার সাথে বৃদ্ধ হতে চাই।</p>
+                    <p>তুমি আমার সবকিছু। ❤️</p>
+                    <div class="signature">- তোমার <span id="modalSender">মিঃ আমিন</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== BACKGROUND MUSIC ===== -->
+        <audio id="bgMusic" loop preload="auto">
+            <source src="https://music.com.bd/download/Music/K/Konika/Ahmmed Humayun featurinng Konika/10. Konika - Valobashar Megh (music.com.bd).mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="hidden-data" id="configData"
+             data-name1="মিঃ আমিন"
+             data-name2="লিজা মনি"
+             data-image1="assets/images/lover-1.jpg"
+             data-image2="assets/images/lija.jpg"
+             data-petal-count="18"
+             data-special-date="2027-10-28"
+             data-love-start-date="2026-10-28"
+             data-dedication="তুমি আমার জীবনের সবচেয়ে সুন্দর অনুভূতি"
+             data-letter="প্রিয় [NAME], তোমার সাথে প্রতিটি দিন আমার জীবনের সবচেয়ে সুন্দর অধ্যায়। তোমার হাসি আমার দিনকে আলোকিত করে, তোমার কথা আমার মনকে শান্তি দেয়। আমি জানি না, কীভাবে তোমাকে বলবো যে তুমি আমার কাছে কতটা মূল্যবান। তুমি শুধু আমার প্রেমিকা নও, তুমি আমার বন্ধু, আমার সঙ্গী, আমার অনুপ্রেরণা। আমি তোমাকে আমার জীবনের প্রতিটি মুহূর্তে চাই। তোমার সাথে হাঁটতে চাই, তোমার সাথে স্বপ্ন দেখতে চাই, তোমার সাথে বৃদ্ধ হতে চাই। তুমি আমার সবকিছু। ❤️">
+    </div>
+        <script src="js/love.js"></script>
+        <script src="js/track.js"></script>
+</body>
+</html>

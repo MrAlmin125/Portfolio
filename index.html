@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+  <title>Amin — ওয়েব ডিজাইনার & গ্রাফিক ডিজাইনার</title>
+  <meta name="description" content="মিঃ আমিন একজন ওয়েব ডিজাইনার এবং গ্রাফিক ডিজাইনার, প্রিমিয়াম, অ্যাপ-সদৃশ ওয়েবসাইট, ব্র্যান্ড আইডেন্টিটি এবং ইন্টারফেস তৈরি করেন।" />
+  <meta name="theme-color" content="#0A0A0F" />
+  <!-- <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />   -->
+  <link rel="icon" href="assets/images/Amin___Black.png">  
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Amin — Web Designer & Graphic Designer">
+<meta property="og:description" content="Digital experiences that make people stop & explore. Web design, UI/UX, and graphic design portfolio.">
+<meta property="og:image" content="assets/images/profile.jpg">
+
+  <!-- Connect early to the third-party origins we actually use, so the
+       DNS/TLS handshake for fonts and icons overlaps with HTML parsing
+       instead of starting cold when the <link> is reached. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+  <!-- Font Awesome for icons — loaded non-blocking (preload + swap to
+       stylesheet once fetched) so it can't hold up first paint; the
+       <noscript> fallback covers the no-JS case. -->
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
+
+  <!-- Google Fonts — previously loaded via @import inside style.css, which
+       forced the browser to fully fetch+parse style.css before it even
+       discovered the font stylesheet. Loading it here (same preload+swap
+       trick, so it never blocks first paint) lets it start in parallel
+       with everything else in <head>. -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Baloo+Da+2:wght@500;600;700;800&family=Tiro+Bangla&family=Hind+Siliguri:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Baloo+Da+2:wght@500;600;700;800&family=Tiro+Bangla&family=Hind+Siliguri:wght@400;500;600;700&display=swap"></noscript>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=6" />
+</head>
+<body data-theme="dark">
+
+<!-- LOADING SCREEN -->
+<div id="loading-screen" aria-hidden="true">
+  <div class="loader-mark" id="loader-letters"></div>
+  <div class="loader-bar"></div>
+</div>
+
+<div id="app">
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <a href="#home" class="brandmark" data-nav-link="home" aria-label="হোমে যান">Amin<span style="color:var(--accent)">.</span></a>
+    <div class="topbar-actions">
+      <button class="icon-btn lang-toggle" id="lang-toggle">EN</button>
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark and light mode">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.4A9 9 0 1 1 11.6 3a7 7 0 0 0 9.4 9.4Z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HOME -->
+    <section id="home" class="screen" data-screen>
+      <div class="hero">
+        <div class="hero-portrait">
+          <div class="glow"></div>
+          <div class="orbit"></div>
+          <div class="ring"></div>
+          <div class="frame">
+            <img id="hero-photo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect width='200' height='200' fill='%2314141C'/%3E%3Ctext x='50' y='120' font-size='80' font-family='Arial' fill='%23FF7A1E'%3EA%3C/text%3E%3C/svg%3E" alt="Portrait">
+          </div>
+        </div>
+        <div class="hero-order">
+          <div class="hero-text">
+            <span class="status-pill" id="availability-pill"><span class="status-dot"></span> <span data-i18n="available">কাজের জন্য উপলব্ধ</span></span>
+            <h1 style="margin-top:20px" id="hero-name">মিঃ আমিন</h1>
+            <div class="role" id="hero-role">ওয়েব ডিজাইনার ও গ্রাফিক ডিজাইনার</div>
+            <p class="tagline" id="hero-tagline">আমি ডিজিটাল অভিজ্ঞতা ডিজাইন করি যা মানুষকে থামিয়ে অন্বেষণ করতে বাধ্য করে।</p>
+           <!-- SOCIAL ICONS ANIMATED - colorful -->
+          <div class="social-animated" id="socialAnimated">
+            <div class="social-icon-item" data-social="facebook"><a href="https://facebook.com/mr.amin4125" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></div>
+            <div class="social-icon-item" data-social="instagram"><a href="https://www.instagram.com/al.amin125" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></div>
+            <div class="social-icon-item" data-social="messenger"><a href="https://m.me/mr.amin4125" target="_blank" aria-label="Messenger"><i class="fab fa-facebook-messenger"></i></a></div>   
+            <div class="social-icon-item" data-social="whatsapp"><a href="https://wa.link/pp9gov" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
+            <div class="social-icon-item" data-social="x"><a href="https://x.com/MrAmin125" target="_blank" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a></div>
+            <div class="social-icon-item" data-social="telegram"><a href="https://t.me/mr_amin4125" target="_blank" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a></div>
+          </div>   
+          </div>   
+            <div class="hero-cta" style="margin-top:16px">
+              <a href="#work" class="btn btn-primary" data-nav-link="work" data-i18n="btn_view_work">আমার কাজ দেখুন</a>
+              <a href="#contact" class="btn btn-ghost" data-nav-link="contact" data-i18n="btn_lets_talk">যোগাযোগ করুন</a>
+            </div>
+           
+        </div>
+      </div>
+
+      <div class="reveal" id="stats-block">
+        <div class="eyebrow" data-i18n="eyebrow_snapshot">স্ন্যাপশট</div>
+        <div class="stat-grid" id="stat-grid"></div>
+      </div>
+
+      <div class="reveal">
+        <div class="section-head">
+          <div class="eyebrow" data-i18n="eyebrow_selected_work">নির্বাচিত কাজ</div>
+          <h2 data-i18n="heading_featured_projects">ফিচার্ড প্রকল্প</h2>
+        </div>
+        <div class="project-scroller" id="featured-projects"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT + GALLERY -->
+    <section id="about" class="screen" data-screen>
+      <div class="reveal">
+        <div class="eyebrow" data-i18n="eyebrow_who_i_am">আমি কে</div>
+        <h2 class="section-head" style="margin-bottom:22px" data-i18n="heading_about_me">আমার সম্পর্কে</h2>
+        <div class="about-photo">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect width='200' height='200' fill='%2314141C'/%3E%3Ctext x='30' y='120' font-size='80' font-family='Arial' fill='%23FF7A1E'%3EAMIN%3C/text%3E%3C/svg%3E" alt="Mr. Amin">
+        </div>
+        <div class="about-meta" id="about-meta"></div>
+        <div class="about-copy" id="about-copy"></div>
+        <button id="read-more-btn">
+          <span data-i18n="btn_read_more">আরও পড়ুন</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+      </div>
+
+      <!-- GALLERY -->
+      <div class="reveal" style="margin-top:16px">
+        <div class="eyebrow" data-i18n="gallery_title">গ্যালারি</div>
+        <h2 class="section-head" style="margin-bottom:8px" data-i18n="gallery_title">কিছু মুহূর্ত</h2>
+        <p class="sub" style="color:var(--text-dim); font-size:14px; margin-bottom:6px;" data-i18n="gallery_sub">ডিজাইন, স্টুডিও, এবং কাজের পরিবেশ থেকে কিছু ছবি</p>
+        <div class="gallery-wrapper" id="gallery-wrapper">
+          <div class="gallery-track" id="gallery-track"></div>
+          <div class="gallery-dots" id="gallery-dots"></div>
+          <div class="gallery-nav">
+            <button id="gallery-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+            <button id="gallery-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal" style="margin-top:16px">
+        <div class="eyebrow" data-i18n="eyebrow_where_ive_been">যেখানে আমি ছিলাম</div>
+        <h2 class="section-head" style="margin-bottom:0" data-i18n="heading_experience">অভিজ্ঞতা</h2>
+        <div class="timeline" id="timeline"></div>
+      </div>
+
+      <div class="reveal" style="margin-top:16px">
+        <div class="eyebrow" data-i18n="eyebrow_what_clients_say">ক্লায়েন্টরা যা বলে</div>
+        <h2 class="section-head" style="margin-bottom:0" data-i18n="heading_testimonials">প্রশংসাপত্র</h2>
+        <div class="testi-scroller" id="testimonials"></div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="screen" data-screen>
+      <div class="reveal">
+        <div class="eyebrow" data-i18n="eyebrow_portfolio">পোর্টফোলিও</div>
+        <h2 class="section-head" style="margin-bottom:20px" data-i18n="heading_selected_work">নির্বাচিত কাজ</h2>
+        <div class="filter-row" id="filter-row"></div>
+        <div class="project-grid" id="project-grid"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="screen" data-screen>
+      <div class="reveal">
+        <div class="eyebrow" data-i18n="eyebrow_capabilities">দক্ষতা</div>
+        <h2 class="section-head" style="margin-bottom:24px" data-i18n="heading_skills">দক্ষতাসমূহ</h2>
+        <div id="skills-list"></div>
+      </div>
+      <div class="reveal" style="margin-top:16px">
+        <div class="eyebrow" data-i18n="eyebrow_how_i_can_help">আমি কীভাবে সাহায্য করতে পারি</div>
+        <h2 class="section-head" style="margin-bottom:22px" data-i18n="heading_services">সেবাসমূহ</h2>
+        <div class="service-grid" id="service-grid"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="screen" data-screen>
+      <div class="reveal">
+        <div class="eyebrow" data-i18n="eyebrow_get_in_touch">যোগাযোগ</div>
+        <h2 class="section-head" style="margin-bottom:6px" data-i18n="heading_lets_build">একটি দুর্দান্ত কিছু তৈরি করি</h2>
+        <p class="sub" style="margin-top:8px; color:var(--text-dim);" data-i18n="contact_sub">আপনার কি একটি প্রকল্প আছে? আমাকে কিছু বলুন, আমি একদিনের মধ্যে ফিরে আসব।</p>
+
+        <form class="contact-form" id="contact-form">
+          <input type="text" name="website" id="f-website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="form-row">
+            <div class="field field-required"><label for="f-name" data-i18n="form_label_name">নাম</label><input id="f-name" name="name" type="text" data-i18n-placeholder="form_placeholder_name" placeholder="আপনার নাম" required></div>
+            <div class="field field-required"><label for="f-email" data-i18n="form_label_email">ইমেইল</label><input id="f-email" name="email" type="email" data-i18n-placeholder="form_placeholder_email" placeholder="you@email.com" required></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="f-phone" data-i18n="form_label_phone">ফোন</label><input id="f-phone" name="phone" type="tel" data-i18n-placeholder="form_placeholder_phone" placeholder="ঐচ্ছিক"></div>
+            <div class="field field-required"><label for="f-subject" data-i18n="form_label_subject">বিষয়</label><input id="f-subject" name="subject" type="text" data-i18n-placeholder="form_placeholder_subject" placeholder="প্রকল্প অনুসন্ধান" required></div>
+          </div>
+          <div class="field field-required"><label for="f-message" data-i18n="form_label_message">বার্তা</label><textarea id="f-message" name="message" data-i18n-placeholder="form_placeholder_message" placeholder="আপনার প্রকল্প সম্পর্কে বলুন..." required></textarea></div>
+          <label class="consent-check">
+            <input type="checkbox" id="f-subscribe" name="subscribe" checked>
+            <span data-i18n="form_consent_subscribe">আমাকে নতুন প্রকল্প সম্পর্কে আপডেট রাখুন (মাঝে মাঝে ইমেইল, যেকোনো সময় আনসাবস্ক্রাইব করুন)</span>
+          </label>
+          <button type="submit" class="btn btn-primary" id="contact-submit"><span data-i18n="btn_send_message">বার্তা পাঠান</span></button>
+          <div class="form-note" id="form-note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>
+            <span data-i18n="form_note_sent">বার্তা পাঠানো হয়েছে — শীঘ্রই যোগাযোগ করব।</span>
+          </div>
+          <div class="form-note form-note-error" id="form-note-error">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+            <span data-i18n="contact_error" id="form-error-text">কিছু ভুল হয়েছে। আবার চেষ্টা করুন।</span>
+          </div>
+        </form>
+      </div>
+
+      <div class="reveal" style="margin-top:26px">
+        <div class="contact-info" id="contact-info"></div>
+      </div>
+
+      <div class="reveal" style="margin-top:26px">
+        <div class="newsletter-block">
+          <div class="eyebrow" data-i18n="eyebrow_newsletter">নিউজলেটার</div>
+          <h3 data-i18n="heading_newsletter">মাঝে মাঝে আপডেট পান</h3>
+          <p class="sub" style="color:var(--text-dim);" data-i18n="newsletter_sub">নতুন প্রকল্প, ডিজাইন নোট, এবং দরকারি টিপস — কোনো স্প্যাম নয়, যেকোনো সময় আনসাবস্ক্রাইব করুন।</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="text" name="website" id="n-website" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="field-with-icon" style="flex:1; position:relative;">
+              <i class="fas fa-envelope field-icon"></i>
+              <input type="email" id="n-email" name="email" data-i18n-placeholder="newsletter_placeholder" placeholder="you@email.com" required>
+            </div>
+            <button type="submit" class="btn btn-primary" id="newsletter-submit"><span data-i18n="btn_subscribe">সাবস্ক্রাইব</span></button>
+          </form>
+          <div class="form-note" id="newsletter-note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>
+            <span data-i18n="newsletter_success" id="newsletter-success-text">আপনি সাবস্ক্রাইব করেছেন — ধন্যবাদ!</span>
+          </div>
+          <div class="form-note form-note-error" id="newsletter-note-error">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
+            <span data-i18n="newsletter_error" id="newsletter-error-text">কিছু ভুল হয়েছে। আবার চেষ্টা করুন।</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal" style="margin-top:26px">
+        <div class="eyebrow" data-i18n="eyebrow_elsewhere">অন্যস্থানে</div>
+        <div class="social-row" id="social-row"></div>
+      </div>
+      <div class="footer">© <span id="year">|</span> <span data-i18n="footer_name">মিঃ আমিন</span>. <span data-i18n="footer_tagline">|</span></div>
+    </section>
+
+  </main>
+
+  <!-- BOTTOM NAV -->
+  <nav id="bottom-nav" aria-label="প্রাথমিক">
+    <div class="nav-inner">
+      <button class="nav-item" data-nav="home" aria-label="হোম">
+        <span class="dot"></span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 11.5 12 4l8 7.5"/><path d="M6 10v9a1 1 0 0 0 1 1h3v-6h4v6h3a1 1 0 0 0 1-1v-9"/></svg>
+        <span data-i18n="nav_home">হোম</span>
+      </button>
+      <button class="nav-item" data-nav="about" aria-label="আমার সম্পর্কে">
+        <span class="dot"></span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="3.4"/><path d="M5 20c1.2-3.8 4-5.5 7-5.5s5.8 1.7 7 5.5"/></svg>
+        <span data-i18n="nav_about">আমার সম্পর্কে</span>
+      </button>
+      <button class="nav-item" data-nav="work" aria-label="কাজ">
+        <span class="dot"></span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="7.5" width="17" height="12" rx="2"/><path d="M8.5 7.5V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.5"/></svg>
+        <span data-i18n="nav_work">কাজ</span>
+      </button>
+      <button class="nav-item" data-nav="skills" aria-label="দক্ষতা">
+        <span class="dot"></span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>
+        <span data-i18n="nav_skills">দক্ষতা</span>
+      </button>
+      <button class="nav-item" data-nav="contact" aria-label="যোগাযোগ">
+        <span class="dot"></span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="5" width="17" height="14" rx="2"/><path d="M4 6.5l8 6 8-6"/></svg>
+        <span data-i18n="nav_contact">যোগাযোগ</span>
+      </button>
+      <a class="nav-item" href="blog.php" aria-label="ব্লগ">
+        <span class="dot"></span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 4h9l5 5v11a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z"/><path d="M9 12h6M9 16h6M9 8h2"/></svg>
+        <span data-i18n="nav_blog">ব্লগ</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- PROJECT BOTTOM SHEET -->
+  <div class="sheet-backdrop" id="sheet-backdrop"></div>
+  <div class="bottom-sheet" id="project-sheet" role="dialog" aria-modal="true" aria-label="প্রকল্পের বিবরণ">
+    <div class="sheet-handle"></div>
+    <button class="sheet-close" id="sheet-close" aria-label="বন্ধ করুন">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <div id="sheet-body"></div>
+  </div>
+
+</div>
+
+<!-- JavaScript -->
+<script src="js/data.js?v=6"></script>
+<script src="js/script.js?v=6"></script>
+<script src="js/track.js?v=6"></script>
+</body>
+</html>

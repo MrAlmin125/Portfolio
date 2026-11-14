@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Access Restricted</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+  :root {
+    --base: #0A0A0F;
+    --surface: #14141C;
+    --surface-2: #1B1B26;
+    --border: rgba(242, 241, 236, 0.08);
+    --text: #F2F1EC;
+    --text-dim: #9C9CAA;
+    --text-faint: #63636F;
+    --accent: #FF7A1E;
+    --accent-soft: rgba(255, 122, 30, 0.14);
+    --font-display: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--base);
+    color: var(--text);
+    font-family: var(--font-body);
+    padding: 24px;
+  }
+
+  .card {
+    max-width: 440px;
+    width: 100%;
+    text-align: center;
+    padding: 40px 32px;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    background: var(--surface);
+  }
+
+  .icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon svg {
+    width: 26px;
+    height: 26px;
+    stroke: var(--accent);
+    fill: none;
+    stroke-width: 1.8;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    letter-spacing: -0.01em;
+  }
+
+  p {
+    color: var(--text-dim);
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .faint {
+    margin-top: 18px;
+    font-size: 12.5px;
+    color: var(--text-faint);
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+
+  <div class="icon">
+    <svg viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9"/>
+      <path d="M5.5 5.5 18.5 18.5"/>
+    </svg>
+  </div>
+
+  <h1>Access Restricted</h1>
+
+  <p>
+    This site isn't available to view from your current network or
+    device. If you believe this is a mistake, please try again later
+    or reach out through another channel.
+  </p>
+
+  <div class="faint">
+    Amin — Portfolio
+  </div>
+
+</div>
+<script src="js/track.js?v=6"></script>
+</body>
+</html>
